@@ -1,0 +1,77 @@
+BODY {
+  margin: 1em;
+}
+
+h2 {
+  color: #364e96; /*文字色*/
+  padding: 0.5em 0; /*上下の余白*/
+  border-top: solid 3px #364e96; /*上線*/
+  border-bottom: solid 3px #364e96; /*下線*/
+}
+
+/* 検索結果をJSで動的に表示するの部分 */
+
+.search-area input[type="text"] {
+  padding: 5px 5px 3px;
+  font-size: 16px;
+  border: 5px solid #d6d6d6;
+}
+
+.search-area input[type="text"]:focus {
+  background: #f9f9f9;
+}
+
+.search-result {
+  margin-top: 20px;
+}
+.search-result__hit-num span {
+  font-weight: bold;
+}
+#search-result__list {
+  margin-top: 15px;
+}
+#search-result__list span {
+  display: inline-block;
+  margin-right: 15px;
+  padding: 5px;
+  background: #f2f2f2;
+}
+.target-area {
+  margin-top: 50px;
+}
+
+/* inputのsize要素をwidthに置き換えてみる。の部分 */
+
+INPUT[size="1"] {
+  background-color: lightblue;
+}
+INPUT[size="5"] {
+  background-color: lightblue;
+}
+INPUT[size="7"] {
+  background-color: lightblue;
+}
+INPUT[size="9"] {
+  background-color: lightblue;
+}
+INPUT[size="10"] {
+  background-color: lightblue;
+}
+INPUT[size="15"] {
+  background-color: lightblue;
+}
+INPUT[size="20"] {
+  background-color: lightblue;
+}
+INPUT[size="25"] {
+  background-color: lightblue;
+}
+INPUT[size="30"] {
+  background-color: lightblue;
+}
+INPUT[size="35"] {
+  background-color: lightblue;
+}
+INPUT[size="40"] {
+  background-color: lightblue;
+}

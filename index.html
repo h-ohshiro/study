@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>検索結果をJSで動的に表示する</h2>
+    <div class="wrapper">
+      <div class="search-area">
+        <form>
+          <input type="text" id="search-text" placeholder="検索ワードを入力" />
+        </form>
+        <div class="search-result">
+          <div class="search-result__hit-num"></div>
+          <div id="search-result__list"></div>
+        </div>
+      </div>
+
+      <ul class="target-area">
+        <li>りんご120円</li>
+        <li>ばなな100円</li>
+        <li>みかん150円</li>
+        <li>いちご220円</li>
+        <li>すいか500円</li>
+      </ul>
+    </div>
+    <!-- /.wrapper -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script type="text/javascript" src="/index.js"></script>
+
+    <h2>inputのsize要素をwidthに置き換えてみる。</h2>
+    <p>結果、sizeが1上がるごとに7pxをとっている。 <br />※例外として、再下限が決まっていることにより、size=1は36pxとなる。<br />IE→chrome時のsize相違の参考に。</p>
+
+    <input type="text" size="1" value="size=1" /><br />
+    <input type="text" style="width: 36px" value="width: 36px" /><br />
+    <input type="text" size="5" value="size=5" /><br />
+    <input type="text" style="width: 64px" value="width: 64px" /><br />
+    <input type="text" size="7" value="size=7" /><br />
+    <input type="text" style="width: 78px" value="width: 78px" /><br />
+    <input type="text" size="9" value="size=9" /><br />
+    <input type="text" style="width: 92px" value="width: 92px" /><br />
+    <input type="text" size="10" value="size=10" /><br />
+    <input type="text" style="width: 99px" value="width: 99px" /><br />
+    <input type="text" size="15" value="size=15" /><br />
+    <input type="text" style="width: 134px" value="width: 134px" /><br />
+    <input type="text" size="20" value="size=20" /><br />
+    <input type="text" style="width: 169px" value="width: 169px" /><br />
+    <input type="text" size="25" value="size=25" /><br />
+    <input type="text" style="width: 204px" value="width: 204px" /><br />
+    <input type="text" size="30" value="size=30" /><br />
+    <input type="text" style="width: 239px" value="width: 239px" /><br />
+    <input type="text" size="35" value="size=35" /><br />
+    <input type="text" style="width: 274px" value="width: 274px" /><br />
+    <input type="text" size="40" value="size=40" /><br />
+    <input type="text" style="width: 309px" value="width: 309px" />
+  </body>
+</html>
